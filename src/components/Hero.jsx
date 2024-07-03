@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import heroImg from '../assets/hero_img.png'
 
 import Header from './Header'
@@ -21,11 +22,10 @@ const Hero = () => {
                 Grow your career fast with right mentor.
               </p>
 
-              <a
-                href='#'
+              <Link
+                to='/register'
                 title=''
                 className='inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400'
-                role='button'
               >
                 Join for free
                 <svg
@@ -36,23 +36,23 @@ const Hero = () => {
                   stroke='currentColor'
                 >
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='1.5'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='1.5'
                     d='M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z'
                   />
                 </svg>
-              </a>
+              </Link>
 
               <p className='mt-5 text-gray-600'>
                 Already joined us?{' '}
-                <a
-                  href='#'
+                <Link
+                  to='/login'
                   title=''
                   className='text-black transition-all duration-200 hover:underline'
                 >
                   Log in
-                </a>
+                </Link>
               </p>
             </div>
 

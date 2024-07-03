@@ -166,7 +166,7 @@ const Header = () => {
             </Link>
 
             <Link
-              href='/donate'
+              to='/donate'
               title=''
               className='flex w-full py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70'
             >
